@@ -2,22 +2,18 @@ clear all; close all; clc;
 UsingBurstingModel = 1; % 1 for bursting model; 0 for constitutive model.
 if UsingBurstingModel==1
     folderName = horzcat('Results_Optimization_B'); if exist (folderName, 'dir') ~= 7; mkdir(folderName); end
-    % An initial matrix is given to find the best parameters.
-    initialMatrix = [0, 0, 0, 0 ,0];
-    %  initialMatrix = [0.0244, 3, 0.0234,0.0139 ,9.6e-5]; % Best parameters for a Bursty model.
+    initialMatrix = [0.0244, 3, 0.0234,0.0139 ,9.6e-5]; % Best parameters for a Bursty model
     folderName_2 = horzcat('Results_Optimization_C'); if exist (folderName_2, 'dir') ~= 7; mkdir(folderName_2); end % second folder for the comparison
 else
     folderName = horzcat('Results_Optimization_C'); if exist (folderName, 'dir') ~= 7; mkdir(folderName); end
-    % An initial matrix is given to find the best parameters.
-    initialMatrix = [0, 0, 0, 0 ,0];
-    % initialMatrix = [0.0223    9.8295    0.0800    0.0021 , 0]; % Best parameters for a constitutive model.
+    initialMatrix = [0.0223    9.8295    0.0800    0.0021 , 0]; %  9.8295
     folderName_2 = horzcat('Results_Optimization_B'); if exist (folderName_2, 'dir') ~= 7; mkdir(folderName_2); end % second folder for the comparison
 end
 %% Using fast SSA. Hybrid stochastic before the FSS and deterministic after FSS.
 elongationFast=0; % 0 For fully stochastic system. 1 for hybrid system.
 %% deffining time and repetitions
 nonConsiderTime = 10000;
-nonConsiderTime_short =10000;
+nonConsiderTime_short =2000;
 nRepetitions = 10000;
 nRepetitions_Harringtonine = 192;
 runningParameterScan = 0;
