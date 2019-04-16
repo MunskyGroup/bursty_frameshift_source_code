@@ -21,7 +21,7 @@ timePerturbationApplication = 0; evaluatingFRAP = 0; evaluatingInhibitor = 0; pl
 % Calculating percentage of spots per frame
 [fit_Percent,conditionPercentage] = percentagePerFrame(nRepetitions, '', intensityVector_0, intensityVector_1,plottingCondition);
 % Calculating intensities and ratios
-[ fit_meanIntensity,fit_ratio,conditionFractions] = compare_intensities_and_fractions (intensityVector_0,intensityVector_1,plottingCondition,folderName);
+[ fit_meanIntensity,fit_ratio,conditionFractions] = compare_intensities_and_fractions (intensityVector_0,intensityVector_1,plottingCondition,'');
 % Performing the Harringtonine Assays
 if (conditionFractions ==1 && conditionPercentage==1) || runningParameterScan ==1
     [fit_HT_Org, fit_HT_HA]= harringtonine_assays('',nonConsiderTime,nonConsiderTime_short, geneFileName_0F_HA,geneFileName_1F_HA, ke,position_FS, ki, nRepetitions_Harringtonine, UsingBurstingModel,k_on, k_off, k_fss, k_s_fss,plottingCondition,runningParameterScan,independent_Repetitions,elongationFast);
