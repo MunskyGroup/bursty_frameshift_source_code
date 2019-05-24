@@ -1,7 +1,7 @@
 Codes for "Live-cell single RNA imaging reveals bursts of translational frameshifting"
 =======
 
-Kenneth Lyon, Luis U. Aguilera, Tatsuya Morisaki, Brian Munsky, and Timothy J. Stasevich1,
+Kenneth Lyon, Luis U. Aguilera, Tatsuya Morisaki, Brian Munsky, and Timothy J. Stasevich,
 
 Department of Biochemistry and Molecular Biology, Institute of Genome Architecture and Function, Colorado State University, Fort Collins, CO, 80523, USA
 Department of Chemical and Biological Engineering and School of Biomedical Engineering, Colorado State University, Fort Collins, CO, 80523, USA
