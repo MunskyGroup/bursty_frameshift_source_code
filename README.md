@@ -15,11 +15,11 @@ This repository contains the codes necessary to reproduce figures from the above
 
 ## Code organization
 
-The codes are organized on three main cathegories.
+The codes are organized on three main categories.
 
   * **runner__FrameShifting.m** performs the stochastic simulation and reproduces the percentage of spots in shifted and non-shifted states, number of ribosomes, intensities and harringtonine assays.
   * **runner__Optimization.m** performs the parameter optimization using the pattern search algorithm. 
-  * **runner__Parameter_Uncertanty.m** performs a random search to evaluate parameter uncertanty.
+  * **runner__Parameter_uncertainty.m** performs a random search to evaluate parameter uncertainty.
 
 ---
 
@@ -47,4 +47,4 @@ The experimental data used for the harringtonine assays
 
 ## Code implementation.
 
-The codes performing the optimization and uncertanty (runner__Optimization.m and runner__Parameter_Uncertanty.m), rely upon expensive computations that were performed on the W.M. Keck Compute Cluster. 
+The codes performing the optimization and uncertainty (runner__Optimization.m and runner__Parameter_Uncertainty.m), rely upon expensive computations that were performed on the W.M. Keck Compute Cluster. 
